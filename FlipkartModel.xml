@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+   <groups>
+    	<define name="AllGroups">  <!-- optional -->
+    		<include name ="CommonFunction "></include>
+       		 <include name ="   "></include>
+            <include name ="   "></include>
+         </define>
+    <run>
+        	<include name ="   "></include>
+            <include name ="   "/> 	<!-- this tag is to include and run the testcases in the group- -->
+			<exclude name ="   "></exclude>   <!-- This tag is used to exclude a particular testcase from the group -->
+    </run>
+  </groups>  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
